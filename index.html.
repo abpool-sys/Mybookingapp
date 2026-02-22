@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Web App</title>
+    <style>
+        /* Basic styling to make it look nice */
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hello, World!</h1>
+        <p>My web app is running on GitHub Pages.</p>
+        <button onclick="greet()">Click Me</button>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        // Simple logic for your app
+        function greet() {
+            document.getElementById('message').innerText = "The code is working perfectly!";
+        }
+    </script>
+</body>
+</html>
